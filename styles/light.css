@@ -9,14 +9,14 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --text-font: 'IBM Plex mono', 'serif';
-  --bg-color: #FFF1F7;;
+  --text-font: "IBM Plex mono", "serif";
+  --bg-color: #fff1f7;
   --nav-color: #353430;
-  --accent-color: #FF8DCB;
+  --accent-color: #ff8dcb;
   --subtitle-color: #353430;
   --subtitle-main-color: #353430;
   --text-color: #353430;
-  --title-color: #FFC2E6;
+  --title-color: #ffc2e6;
   --bg-image: url(../images/cover-image-light.png);
   --text-size: 18px;
   --decor-element: none;
@@ -24,16 +24,37 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --text-font: 'IBM Plex mono', 'serif';
-    --bg-color: #FFF1F7;;
+    --text-font: "IBM Plex mono", "serif";
+    --bg-color: #fff1f7;
     --nav-color: #353430;
-    --accent-color: #FF8DCB;
+    --accent-color: #ff8dcb;
     --subtitle-color: #353430;
     --subtitle-main-color: #353430;
     --text-color: #353430;
-    --title-color: #FFC2E6;
+    --title-color: #ffc2e6;
     --bg-image: url(../images/cover-image-light.png);
     --text-size: 18px;
     --decor-element: none;
-  } 
+  }
+
+  .header__theme-menu-button {
+    color: var(--nav-color, #353430);
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid var(--nav-color, #353430);
+  }
+
+  .header__theme-menu-button:focus {
+    outline: 0px solid transparent;
+    border-bottom: 1px solid var(--nav-color, #353430);
+  }
+
+  .header__theme-menu-button_active {
+    outline: 1px solid var(--nav-color, #353430);
+  }
+
+  .link-decoration {
+    text-shadow: 1px 2px 0px var(--accent-color, #ff8dcb);
+  }
 }
