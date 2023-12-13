@@ -288,6 +288,7 @@
   justify-content: center;
   align-items: center;
   min-height: 768px;
+  height: 100vh;
 }
 
 .footer__title {
@@ -413,29 +414,6 @@
   }
 }
 
-@media (prefers-color-scheme: light) {
-  .header__theme-menu-button {
-    color: var(--nav-color, #353430);
-  }
-
-  .header__theme-menu-button:hover {
-    outline: 1px solid var(--button-hover, rgba(50, 49, 45, 0.4));
-  }
-
-  .header__theme-menu-button:focus {
-    outline: 0px solid transparent;
-    border-bottom: 1px solid var(--nav-color, #353430);
-  }
-
-  .header__theme-menu-button_active {
-    outline: 1px solid var(--nav-color, #353430);
-  }
-
-  .link-decoration {
-    text-shadow: 1px 2px 0px var(--accent-color, #ff8dcb);
-  }
-}
-
 @media (width > 375px) and (width <= 455px) {
   .header__text {
     max-width: fit-content;
@@ -458,5 +436,3 @@
     width: min-content;
   }
 }
-
-/* * { outline: 1px solid yellow; } */
